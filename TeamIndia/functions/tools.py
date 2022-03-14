@@ -8,15 +8,15 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for admin module
 
  
-def alicia_tools_callback(update, context):
+def india_tools_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatools_":
+    if query.data == "indiatools_":
         query.message.edit_text(
             text=""" Here is the help for the *Tools* module:
 
@@ -50,9 +50,9 @@ def alicia_tools_callback(update, context):
         )
 
  
-def alicia_tools_barcode_callback(update, context):
+def india_tools_barcode_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatoolsbarcode_":
+    if query.data == "indiatoolsbarcode_":
         query.message.edit_text(
             text=""" Here is the help for the *Barcode* module:
 
@@ -77,9 +77,9 @@ def alicia_tools_barcode_callback(update, context):
         )
 
  
-def alicia_tools_cc_callback(update, context):
+def india_tools_cc_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatoolscc_":
+    if query.data == "indiatoolscc_":
         query.message.edit_text(
             text="""Here is the help for the *CC-Check* module:
 
@@ -106,9 +106,9 @@ def alicia_tools_cc_callback(update, context):
 
 
  
-def alicia_tools_telegraph_callback(update, context):
+def india_tools_telegraph_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatoolstelegraph_":
+    if query.data == "indiatoolstelegraph_":
         query.message.edit_text(
             text=""" Here is the help for the *Telegraph* module:
 
@@ -127,9 +127,9 @@ def alicia_tools_telegraph_callback(update, context):
         )
 
  
-def alicia_tools_tts_callback(update, context):
+def india_tools_tts_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatoolstts_":
+    if query.data == "indiatoolstts_":
         query.message.edit_text(
             text="""Here is the help for the *TTS/STT* module:
 
@@ -158,9 +158,9 @@ def alicia_tools_tts_callback(update, context):
 
 
  
-def alicia_tools_search_callback(update, context):
+def india_tools_search_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciatoolsearch_":
+    if query.data == "indiatoolsearch_":
         query.message.edit_text(
             text=""" Here is the help for the *Search* module:
 
@@ -174,8 +174,8 @@ def alicia_tools_search_callback(update, context):
   ❍ /github <username>: Get information about a GitHub user.
   ❍ /country <country name>: Gathering info about given country
   ❍ /imdb <Movie name>: Get full info about a movie with imdb.com
-  ❍ Alicia <query>: Alicia answers the query
-   💡Ex: Alicia where is India?
+  ❍ india <query>: india answers the query
+   💡Ex: india where is India?
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -191,12 +191,12 @@ def alicia_tools_search_callback(update, context):
 
 # Handlers start from here 
 
-tools_callback_handler = CallbackQueryHandler(alicia_tools_callback, pattern=r"aliciatools_", run_async=True)
-tools_barcode_callback_handler = CallbackQueryHandler(alicia_tools_barcode_callback, pattern=r"aliciatoolsbarcode_", run_async=True)
-tools_cc_callback_handler = CallbackQueryHandler(alicia_tools_cc_callback, pattern=r"aliciatoolscc_", run_async=True)
-tools_telegraph_callback_handler = CallbackQueryHandler(alicia_tools_telegraph_callback, pattern=r"aliciatoolstelegraph_", run_async=True)
-tools_tts_callback_handler = CallbackQueryHandler(alicia_tools_tts_callback, pattern=r"aliciatoolstts_", run_async=True)
-tools_search_callback_handler = CallbackQueryHandler(alicia_tools_search_callback, pattern=r"aliciatoolsearch_", run_async=True)
+tools_callback_handler = CallbackQueryHandler(india_tools_callback, pattern=r"indiatools_", run_async=True)
+tools_barcode_callback_handler = CallbackQueryHandler(india_tools_barcode_callback, pattern=r"indiatoolsbarcode_", run_async=True)
+tools_cc_callback_handler = CallbackQueryHandler(india_tools_cc_callback, pattern=r"indiatoolscc_", run_async=True)
+tools_telegraph_callback_handler = CallbackQueryHandler(india_tools_telegraph_callback, pattern=r"indiatoolstelegraph_", run_async=True)
+tools_tts_callback_handler = CallbackQueryHandler(india_tools_tts_callback, pattern=r"indiatoolstts_", run_async=True)
+tools_search_callback_handler = CallbackQueryHandler(india_tools_search_callback, pattern=r"indiatoolsearch_", run_async=True)
 
 
 
