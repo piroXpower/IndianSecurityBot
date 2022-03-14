@@ -8,15 +8,15 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for admin module
 
  
-def alicia_sticker_callback(update, context):
+def india_sticker_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciasticker_":
+    if query.data == "indiasticker_":
         query.message.edit_text(
             text="""Here is the help for the *Stickers* module:
 
@@ -38,7 +38,7 @@ def alicia_sticker_callback(update, context):
   
   ❍ /removefsticker or /rfs <custom name>: Reply to a sticker to remove it into your favorite pack list.
   
-  *Example:* `/addfstickers Alicia`
+  *Example:* `/addfstickers india`
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -52,9 +52,9 @@ def alicia_sticker_callback(update, context):
         )
 
  
-def alicia_sticker_memify_callback(update, context):
+def india_sticker_memify_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciastickermemify_":
+    if query.data == "indiastickermemify_":
         query.message.edit_text(
             text=""" Here is the help for the *Memify* module:
 
@@ -78,9 +78,9 @@ def alicia_sticker_memify_callback(update, context):
         )
 
  
-def alicia_sticker_transform_callback(update, context):
+def india_sticker_transform_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciastickertransform_":
+    if query.data == "indiastickertransform_":
         query.message.edit_text(
             text=""" Here is the help for the *Transform* module:
 
@@ -112,9 +112,9 @@ def alicia_sticker_transform_callback(update, context):
 
 
  
-def alicia_sticker_dpic_callback(update, context):
+def india_sticker_dpic_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciastickerdpic_":
+    if query.data == "indiastickerdpic_":
         query.message.edit_text(
             text=""" Here is the help for the *DocPic* module:
 
@@ -137,10 +137,10 @@ def alicia_sticker_dpic_callback(update, context):
 
 # Handlers start from here 
 
-sticker_callback_handler = CallbackQueryHandler(alicia_sticker_callback, pattern=r"aliciasticker_", run_async=True)
-sticker_memify_callback_handler = CallbackQueryHandler(alicia_sticker_memify_callback, pattern=r"aliciastickermemify_", run_async=True)
-sticker_transform_callback_handler = CallbackQueryHandler(alicia_sticker_transform_callback, pattern=r"aliciastickertransform_", run_async=True)
-sticker_dpic_callback_handler = CallbackQueryHandler(alicia_sticker_dpic_callback, pattern=r"aliciastickerdpic_", run_async=True)
+sticker_callback_handler = CallbackQueryHandler(india_sticker_callback, pattern=r"indiasticker_", run_async=True)
+sticker_memify_callback_handler = CallbackQueryHandler(india_sticker_memify_callback, pattern=r"indiastickermemify_", run_async=True)
+sticker_transform_callback_handler = CallbackQueryHandler(india_sticker_transform_callback, pattern=r"indiastickertransform_", run_async=True)
+sticker_dpic_callback_handler = CallbackQueryHandler(india_sticker_dpic_callback, pattern=r"indiastickerdpic_", run_async=True)
 
 
 
