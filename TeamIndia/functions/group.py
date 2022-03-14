@@ -8,21 +8,21 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for admin module
 
  
-def alicia_group_callback(update, context):
+def india_group_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroup_":
+    if query.data == "indiagroup_":
         query.message.edit_text(
             text="""Here is the help for the *Backup* module:
 
  Only for *Group Owner*:
 
- ❍ /import: Reply to the backup file for the Alicia group to import as much as possible, making transfers very easy!  Note that files / photos cannot be imported due to telegram restrictions.
+ ❍ /import: Reply to the backup file for the india group to import as much as possible, making transfers very easy!  Note that files / photos cannot be imported due to telegram restrictions.
  ❍ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons)  """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -36,9 +36,9 @@ def alicia_group_callback(update, context):
         )
 
  
-def alicia_group_bl_callback(update, context):
+def india_group_bl_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroupbl_":
+    if query.data == "indiagroupbl_":
         query.message.edit_text(
             text=""" Here is the help for the *BlackList* module:
 
@@ -75,14 +75,14 @@ def alicia_group_bl_callback(update, context):
         )
 
  
-def alicia_group_fsub_callback(update, context):
+def india_group_fsub_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroupfsub_":
+    if query.data == "indiagroupfsub_":
         query.message.edit_text(
             text=""" Here is the help for the *Force Subscribe* module:
 
   Force Subscribe:
-  ❍ Alicia can mute members who are not subscribed your channel until they subscribe
+  ❍ india can mute members who are not subscribed your channel until they subscribe
   ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
   Setup
   Only creator
@@ -110,9 +110,9 @@ def alicia_group_fsub_callback(update, context):
 
 
  
-def alicia_group_control_callback(update, context):
+def india_group_control_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroupcontrol_":
+    if query.data == "indiagroupcontrol_":
         query.message.edit_text(
             text=""" Here is the help for the *Control* module:
 
@@ -149,9 +149,9 @@ def alicia_group_control_callback(update, context):
         )
 
  
-def alicia_group_disable_callback(update, context):
+def india_group_disable_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroupdisable_":
+    if query.data == "indiagroupdisable_":
         query.message.edit_text(
             text=""" Here is the help for the *Disable* module:
 
@@ -177,9 +177,9 @@ def alicia_group_disable_callback(update, context):
 
 
  
-def alicia_group_nmode_callback(update, context):
+def india_group_nmode_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciagroupnmode_":
+    if query.data == "indiagroupnmode_":
         query.message.edit_text(
             text=""" Here is the help for the NightMode module:
 
@@ -202,12 +202,12 @@ def alicia_group_nmode_callback(update, context):
 
 # Handlers start from here 
 
-group_callback_handler = CallbackQueryHandler(alicia_group_callback, pattern=r"aliciagroup_", run_async=True)
-group_bl_callback_handler = CallbackQueryHandler(alicia_group_bl_callback, pattern=r"aliciagroupbl_", run_async=True)
-group_fsub_callback_handler = CallbackQueryHandler(alicia_group_fsub_callback, pattern=r"aliciagroupfsub_")
-group_control_callback_handler = CallbackQueryHandler(alicia_group_control_callback, pattern=r"aliciagroupcontrol_", run_async=True)
-group_disable_callback_handler = CallbackQueryHandler(alicia_group_disable_callback, pattern=r"aliciagroupdisable_", run_async=True)
-group_nmode_callback_handler = CallbackQueryHandler(alicia_group_nmode_callback, pattern=r"aliciagroupnmode_", run_async=True)
+group_callback_handler = CallbackQueryHandler(india_group_callback, pattern=r"indiagroup_", run_async=True)
+group_bl_callback_handler = CallbackQueryHandler(india_group_bl_callback, pattern=r"indiagroupbl_", run_async=True)
+group_fsub_callback_handler = CallbackQueryHandler(india_group_fsub_callback, pattern=r"indiagroupfsub_")
+group_control_callback_handler = CallbackQueryHandler(india_group_control_callback, pattern=r"indiagroupcontrol_", run_async=True)
+group_disable_callback_handler = CallbackQueryHandler(india_group_disable_callback, pattern=r"indiagroupdisable_", run_async=True)
+group_nmode_callback_handler = CallbackQueryHandler(india_group_nmode_callback, pattern=r"indiagroupnmode_", run_async=True)
 
 
 
