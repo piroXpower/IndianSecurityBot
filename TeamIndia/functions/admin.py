@@ -8,15 +8,15 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from functions.__main__ import *
 
 
 # Buttons Function for admin module
 
 
-def alicia_admin_callback(update, context):
+def india_admin_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadmin_":
+    if query.data == "indiaadmin_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
@@ -41,9 +41,9 @@ def alicia_admin_callback(update, context):
         )
 
 
-def alicia_admin_ban_callback(update, context):
+def india_admin_ban_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadminban_":
+    if query.data == "indiaadminban_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /ban <userhandle>*:* bans a user. (via handle, or reply)
@@ -63,9 +63,9 @@ def alicia_admin_ban_callback(update, context):
         )
 
 
-def alicia_admin_purge_callback(update, context):
+def india_admin_purge_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadminpurge_":
+    if query.data == "indiaadminpurge_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /del*:* deletes the message you replied to
@@ -85,9 +85,9 @@ def alicia_admin_purge_callback(update, context):
 
 
 
-def alicia_admin_promote_callback(update, context):
+def india_admin_promote_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadminpromote_":
+    if query.data == "indiaadminpromote_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /promote*:* promotes the user
@@ -109,9 +109,9 @@ def alicia_admin_promote_callback(update, context):
         )
 
 
-def alicia_admin_warn_callback(update, context):
+def india_admin_warn_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadminwarn_":
+    if query.data == "indiaadminwarn_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /warns <userhandle>*:* get a user's number, and reason, of warns.
@@ -139,9 +139,9 @@ def alicia_admin_warn_callback(update, context):
 
 
 
-def alicia_admin_mute_callback(update, context):
+def india_admin_mute_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciaadminmute_":
+    if query.data == "indiaadminmute_":
         query.message.edit_text(
             text=""" Admins only*:*
   ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
@@ -162,12 +162,12 @@ def alicia_admin_mute_callback(update, context):
 
 # Handlers start from here 
 
-admin_callback_handler = CallbackQueryHandler(alicia_admin_callback, pattern=r"aliciaadmin_", run_async=True)
-admin_ban_callback_handler = CallbackQueryHandler(alicia_admin_ban_callback, pattern=r"aliciaadminban_", run_async=True)
-admin_purge_callback_handler = CallbackQueryHandler(alicia_admin_purge_callback, pattern=r"aliciaadminpurge_", run_async=True)
-admin_promote_callback_handler = CallbackQueryHandler(alicia_admin_promote_callback, pattern=r"aliciaadminpromote_", run_async=True)
-admin_warn_callback_handler = CallbackQueryHandler(alicia_admin_warn_callback, pattern=r"aliciaadminwarn_", run_async=True)
-admin_mute_callback_handler = CallbackQueryHandler(alicia_admin_mute_callback, pattern=r"aliciaadminmute_", run_async=True)
+admin_callback_handler = CallbackQueryHandler(india_admin_callback, pattern=r"indiaadmin_", run_async=True)
+admin_ban_callback_handler = CallbackQueryHandler(india_admin_ban_callback, pattern=r"indiaadminban_", run_async=True)
+admin_purge_callback_handler = CallbackQueryHandler(india_admin_purge_callback, pattern=r"indiaadminpurge_", run_async=True)
+admin_promote_callback_handler = CallbackQueryHandler(india_admin_promote_callback, pattern=r"indiaadminpromote_", run_async=True)
+admin_warn_callback_handler = CallbackQueryHandler(india_admin_warn_callback, pattern=r"indiaadminwarn_", run_async=True)
+admin_mute_callback_handler = CallbackQueryHandler(india_admin_mute_callback, pattern=r"indiaadminmute_", run_async=True)
 
 
 
