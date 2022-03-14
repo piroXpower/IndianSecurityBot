@@ -7,8 +7,8 @@ from typing import List
 from pyrogram.filters import create
 from pyrogram.types import CallbackQuery, Message
 
-from AliciaRobot import DEV_USERS, OWNER_ID, DRAGONS, PREFIX_HANDLER
-from AliciaRobot.utils.caching import ADMIN_CACHE, admin_cache_reload
+from TeamIndia import DEV_USERS, OWNER_ID, DRAGONS, PREFIX_HANDLER
+from TeamIndia.utils.caching import ADMIN_CACHE, admin_cache_reload
 
 SUDO_LEVEL = set(DRAGONS + DEV_USERS + [int(OWNER_ID)])
 DEV_LEVEL = set(DEV_USERS + [int(OWNER_ID)])
@@ -21,7 +21,7 @@ def command(
     sudo_cmd: bool = False,
 ):
     
-    from AliciaRobot import BOT_USERNAME
+    from TeamIndia import BOT_USERNAME
     async def func(flt, _, m: Message):
 
         if not m.from_user:
