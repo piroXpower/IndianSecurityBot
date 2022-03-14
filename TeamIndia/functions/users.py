@@ -8,15 +8,15 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for admin module
  
  
-def alicia_user_callback(update, context):
+def india_user_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauser_":
+    if query.data == "indiauser_":
         query.message.edit_text(
             text="""Here is the help for the *Horoscope* module:
 
@@ -36,9 +36,9 @@ def alicia_user_callback(update, context):
         )
 
  
-def alicia_user_afk_callback(update, context):
+def india_user_afk_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauserafk_":
+    if query.data == "indiauserafk_":
         query.message.edit_text(
             text=""" *Away from group*
   ❍ /afk <reason>: mark yourself as AFK(away from keyboard).
@@ -56,9 +56,9 @@ def alicia_user_afk_callback(update, context):
         )
 
  
-def alicia_user_about_callback(update, context):
+def india_user_about_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauserabout_":
+    if query.data == "indiauserabout_":
         query.message.edit_text(
             text=""" *Self addded information:*
   ❍ /setme <text>: will set your info
@@ -87,9 +87,9 @@ def alicia_user_about_callback(update, context):
 
 
  
-def alicia_user_info_callback(update, context):
+def india_user_info_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauserinfo_":
+    if query.data == "indiauserinfo_":
         query.message.edit_text(
             text=""" *Overall Information about you:*
   ❍ /info: get information about a user.
@@ -109,9 +109,9 @@ def alicia_user_info_callback(update, context):
         )
 
  
-def alicia_user_history_callback(update, context):
+def india_user_history_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauserhistory_":
+    if query.data == "indiauserhistory_":
         query.message.edit_text(
             text="""  *GET NAME HISTORY OF USER*
    ❍ sangmata : /sg - View user name history.
@@ -131,11 +131,11 @@ def alicia_user_history_callback(update, context):
 
 
  
-def alicia_user_extra_callback(update, context):
+def india_user_extra_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciauserextra_":
+    if query.data == "indiauserextra_":
         query.message.edit_text(
-            text=""" Alicia have some extra tool for users, they can use also them*:*
+            text=""" india have some extra tool for users, they can use also them*:*
     *Poto* - You can download anyuser profile pic via this tool
   ❍ /poto - reply to user for download all profile picsF
   ❍ /poto 1 - download specific number of pic, it will download first pic of user
@@ -158,12 +158,12 @@ def alicia_user_extra_callback(update, context):
 
 # Handlers start from here 
 
-user_callback_handler = CallbackQueryHandler(alicia_user_callback, pattern=r"aliciauser_", run_async=True)
-user_afk_callback_handler = CallbackQueryHandler(alicia_user_afk_callback, pattern=r"aliciauserafk_", run_async=True)
-user_about_callback_handler = CallbackQueryHandler(alicia_user_about_callback, pattern=r"aliciauserabout_", run_async=True)
-user_info_callback_handler = CallbackQueryHandler(alicia_user_info_callback, pattern=r"aliciauserinfo_", run_async=True)
-user_histroy_callback_handler = CallbackQueryHandler(alicia_user_history_callback, pattern=r"aliciauserhistory_", run_async=True)
-user_extra_callback_handler = CallbackQueryHandler(alicia_user_extra_callback, pattern=r"aliciauserextra_", run_async=True)
+user_callback_handler = CallbackQueryHandler(india_user_callback, pattern=r"indiauser_", run_async=True)
+user_afk_callback_handler = CallbackQueryHandler(india_user_afk_callback, pattern=r"indiauserafk_", run_async=True)
+user_about_callback_handler = CallbackQueryHandler(india_user_about_callback, pattern=r"indiauserabout_", run_async=True)
+user_info_callback_handler = CallbackQueryHandler(india_user_info_callback, pattern=r"indiauserinfo_", run_async=True)
+user_histroy_callback_handler = CallbackQueryHandler(india_user_history_callback, pattern=r"indiauserhistory_", run_async=True)
+user_extra_callback_handler = CallbackQueryHandler(india_user_extra_callback, pattern=r"indiauserextra_", run_async=True)
 
 
 
