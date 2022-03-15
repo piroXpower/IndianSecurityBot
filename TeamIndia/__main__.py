@@ -17,12 +17,9 @@ from TeamIndia import (
     SUPPORT_CHAT,
     TOKEN,
     URL,
-    WEBHOOK,
-    SUPPORT_CHAT,
+    WEBHOOK,   
     BOT_USERNAME, 
-    BOT_NAME, 
-    SETUP_VIDEO, 
-    QR_CODE, 
+    BOT_NAME,    
     dispatcher,
     StartTime,
     telethn,
@@ -79,10 +76,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+SETUP_VIDEO = ""
 
 PM_START_TEXT = """
-Hᴇʏ Tʜᴇʀᴇ[🤗]({alive_pic}), Iᴍ A Hɪɢʜʏ Aᴅᴠᴀɴᴄᴇᴅ Bᴏᴛ Wɪᴛʜ Lᴏᴛꜱ Oꜰ Aᴍᴀᴢɪɴɢ Tᴏᴏʟꜱ.
+Hᴇʏ Tʜᴇʀᴇ[🤗](https://telegra.ph/file/26f94066bbbc590188cba.jpg), Iᴍ A Hɪɢʜʏ Aᴅᴠᴀɴᴄᴇᴅ Bᴏᴛ Wɪᴛʜ Lᴏᴛꜱ Oꜰ Aᴍᴀᴢɪɴɢ Tᴏᴏʟꜱ.
 I'ᴍ Hᴇʀᴇ Tᴏ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘꜱ! Hɪᴛ /help Tᴏ Kɴᴏᴡ Aʙᴏᴜᴛ Mʏ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇꜱ😉
 """
 
@@ -104,11 +101,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hɪ.. I'ᴍ Bᴇsᴛ Gʀᴏᴜᴘ Manager [❤️]({HELP_IMG}) 
+Hɪ.. I'ᴍ Bᴇsᴛ Gʀᴏᴜᴘ Manager [❤️](https://telegra.ph/file/26f94066bbbc590188cba.jpg) 
 Cʟɪᴄᴋ Oɴ Tʜᴇ Bᴜᴛᴛᴏɴꜱ Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Dᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ Aʙᴏᴜᴛ Sᴘᴇᴄɪꜰɪᴄ Mᴏᴅᴜʟᴇꜱ."""
 
 
-india_IMG = ""
+india_IMG = "https://telegra.ph/file/26f94066bbbc590188cba.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @piroXpower \
@@ -553,24 +550,12 @@ def india_about_callback(update, context):
         )
     elif query.data == "india_donate":
         query.message.edit_text(
-            text=f"**Here Is Some Sources For Donating Coders For Work**",
+            text=f"**Soon**",
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="Gᴇᴛ QrCode", callback_data="india_scnr")],               
-                [InlineKeyboardButton(text="Gᴇᴛ Upi", url="https://p.paytm.me/xCTH/bc9558a4"),
-                 InlineKeyboardButton(text="Get Paypal", url="https://www.paypal.me/piroXpower")
-               ], 
-               [InlineKeyboardButton(text="Go Back", callback_data="india_helpk")],
-              ]
-            ), 
+            show_alert=True
         )
       
-    elif query.data == "india_scnr":
-        query.message.reply_video(
-            PATRICIA_QR,
-            parse_mode=ParseMode.MARKDOWN,                         
-        )
-        query.message.delete()
+    
 
 
     elif query.data == "india_back":
