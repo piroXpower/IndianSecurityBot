@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/TeamIndia
-RUN git clone -b shiken https://github.com/TG-TeamIndia/TeamIndia /root/TeamIndia
+RUN git clone -b shiken https://github.com/TG-TeamIndia/IndianSecurityBot /root/TeamIndia
 WORKDIR /root/TeamIndia
 
 #Copy config file to /root/TeamIndia/TeamIndia
