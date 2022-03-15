@@ -1,7 +1,7 @@
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 import json
 import requests
-from AliciaRobot.events import register
+from TeamIndia.events import register
 from telethon import *
 from telethon.tl import functions
 import os
