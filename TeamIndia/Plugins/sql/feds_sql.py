@@ -1,5 +1,5 @@
 import threading
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 
