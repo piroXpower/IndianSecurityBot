@@ -232,7 +232,7 @@ TIGERS = list(TIGERS)
 
 
 # Load at end to ensure all prev variables have been set
-from TeamIndia.modules.helper_funcs.handlers import (
+from TeamIndia.Plugins.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
