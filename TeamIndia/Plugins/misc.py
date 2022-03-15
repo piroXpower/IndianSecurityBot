@@ -1,6 +1,6 @@
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot import dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
