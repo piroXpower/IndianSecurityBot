@@ -21,12 +21,12 @@ async def sticklet(event):
     image = Image.new("RGBA", (512, 512), (255, 255, 255, 0))
     draw = ImageDraw.Draw(image)
     fontsize = 230
-    font = ImageFont.truetype("./AliciaRobot/resources/Chopsic.otf", size=fontsize)
+    font = ImageFont.truetype("./TeamIndia/resources/Chopsic.otf", size=fontsize)
     strkcolor = ["yellow", "red", "blue", "purple", "white"]
 
     while draw.multiline_textsize(sticktext, font=font) > (512, 512):
         fontsize -= 3
-        font = ImageFont.truetype("./AliciaRobot/resources/Chopsic.otf", size=fontsize)
+        font = ImageFont.truetype("./TeamIndia/resources/Chopsic.otf", size=fontsize)
 
     width, height = draw.multiline_textsize(sticktext, font=font)
     draw.multiline_text(((512-width)/2,(512-height)/2), sticktext, font=font, fill=random.choice(strkcolor))
