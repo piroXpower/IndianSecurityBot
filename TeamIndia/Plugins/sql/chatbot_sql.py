@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy import Column, String
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.sql import BASE, SESSION
 class AliciaChats(BASE):
     __tablename__ = "alicia_chats"
     chat_id = Column(String(14), primary_key=True)
