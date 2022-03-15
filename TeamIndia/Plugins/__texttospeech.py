@@ -7,9 +7,9 @@ import json
 from telegram import ChatAction
 from telegram.ext import run_async
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.alternate import typing_action, send_action
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.alternate import typing_action, send_action
 
 @send_action(ChatAction.RECORD_AUDIO)
 def gtts(update, context):
