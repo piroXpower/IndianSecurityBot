@@ -1,6 +1,6 @@
-from AliciaRobot import pbot as app
-from AliciaRobot.utils.errors import capture_err
-from AliciaRobot.utils.dbfunc import get_couple, save_couple
+from TeamIndia import pbot as app
+from TeamIndia.utils.errors import capture_err
+from TeamIndia.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
