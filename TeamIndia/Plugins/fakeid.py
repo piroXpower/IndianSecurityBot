@@ -4,9 +4,9 @@ import requests
 from faker import Faker
 from faker.providers import internet
 from telethon import events
-from AliciaRobot import SUPPORT_CHAT
-from AliciaRobot.pyrogramee.telethonbasics import is_admin
-from AliciaRobot import telethn as tbot
+from TeamIndia import SUPPORT_CHAT
+from TeamIndia.pyrogramee.telethonbasics import is_admin
+from TeamIndia import telethn as tbot
 
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
