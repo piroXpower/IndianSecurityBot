@@ -1,8 +1,8 @@
 from asyncio.exceptions import TimeoutError
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from AliciaRobot import ubot
-from AliciaRobot.events import register
+from TeamIndia import ubot
+from TeamIndia.events import register
 
 
 @register(pattern="^/sg ?(.*)")
