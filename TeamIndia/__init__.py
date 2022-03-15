@@ -113,7 +113,7 @@ if ENV:
     REDIS_URL = os.environ.get("REDIS_URL", "")
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "NAQKZO-UMQSBG-IUTXPK-WZRJDB-ARQ")
-
+    CODERS = int(os.environ.get("CODERS", "5125042013"))
  
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
