@@ -1,1 +1,1 @@
- @piroXpower
+from TeamIndia import OWNER_ID
