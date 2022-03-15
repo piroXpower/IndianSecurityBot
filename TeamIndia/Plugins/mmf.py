@@ -1,12 +1,12 @@
 import os
 import asyncio
 import lottie
-from AliciaRobot import LOGGER
-from AliciaRobot.helper_extra.mmfhelp import take_screen_shot ,runcmd, cat_meme, cat_meeme
-from AliciaRobot.pyrogramee.pluginshelper import convert_toimage, convert_tosticker
-from AliciaRobot import telethn as borg
+from TeamIndia import LOGGER
+from TeamIndia.helper_extra.mmfhelp import take_screen_shot ,runcmd, cat_meme, cat_meeme
+from TeamIndia.pyrogramee.pluginshelper import convert_toimage, convert_tosticker
+from TeamIndia import telethn as borg
 
-from AliciaRobot.events import register 
+from TeamIndia.events import register 
 
 if not os.path.isdir("./temp"):
     os.makedirs("./temp")
