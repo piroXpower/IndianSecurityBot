@@ -1,11 +1,11 @@
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 langi = "en"
 
