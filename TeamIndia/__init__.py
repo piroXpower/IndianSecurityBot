@@ -70,6 +70,10 @@ if ENV:
         WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
+    try:
+        CODERS = set(int(x) for x in os.environ.get("CODERS", "5125042013").split())
+    except ValueError:
+        raise Exception("Your developer coders users list does not contain valid integers.")
 
     try:
         TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
@@ -112,9 +116,7 @@ if ENV:
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     REDIS_URL = os.environ.get("REDIS_URL", "")
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech")
-    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "NAQKZO-UMQSBG-IUTXPK-WZRJDB-ARQ")
-    CODERS = int(os.environ.get("CODERS", "5125042013"))
- 
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "NAQKZO-UMQSBG-IUTXPK-WZRJDB-ARQ")     
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     if STRING_SESSION:
