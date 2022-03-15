@@ -1,4 +1,4 @@
 @echo off
-TITLE Alicia Robot
-:: Enables virtual env mode and then starts Alicia
-env\scripts\activate.bat && py -m AliciaRobot
+TITLE TeamIndia
+:: Enables virtual env mode and then starts TeamIndia
+env\scripts\activate.bat && py -m TeamIndia
