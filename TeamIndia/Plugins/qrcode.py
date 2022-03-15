@@ -7,8 +7,8 @@ from barcode.writer import ImageWriter
 
 from bs4 import BeautifulSoup
 
-from AliciaRobot import LOGGER
-from AliciaRobot.events import register
+from TeamIndia import LOGGER
+from TeamIndia.events import register
 
 
 @register(pattern="^/decode$")
