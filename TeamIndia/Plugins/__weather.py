@@ -1,4 +1,4 @@
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from AliciaRobot import *
+from TeamIndia import *
 
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 
 async def is_register_admin(chat, user):
