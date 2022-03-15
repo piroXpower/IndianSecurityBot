@@ -1,9 +1,9 @@
 import html
 
-from AliciaRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.sql import reporting_sql as sql
+from TeamIndia import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin, user_not_admin
+from TeamIndia.Plugins.log_channel import loggable
+from TeamIndia.Plugins.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
