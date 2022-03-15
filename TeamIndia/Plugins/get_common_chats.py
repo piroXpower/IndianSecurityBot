@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from AliciaRobot import OWNER_ID, dispatcher
-from AliciaRobot.modules.helper_funcs.extraction import extract_user
-from AliciaRobot.modules.sql.users_sql import get_user_com_chats
+from TeamIndia import OWNER_ID, dispatcher
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user
+from TeamIndia.Plugins.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
