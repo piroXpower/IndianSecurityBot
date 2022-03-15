@@ -142,7 +142,7 @@ else:
     TOKEN = ""
 
     try:
-        OWNER_ID = #YOUR OWNER_ID
+        OWNER_ID = 5125042013
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
@@ -170,7 +170,7 @@ else:
     WORKERS = 8                                                                                                                                                                                                                                                      
     SPAMWATCH_API = "sJsaTYZnYqTR7z~pq8OAdVj2UIktizitY5k6ivnErXkArICQv_ZbNmG6HMDlE7Lg"                                                                                                                                                                               
     REDIS_URL = ""                                                                                                               
-    STRING_SESSION = "1AZWarzoBuyHII-icttyUtvtubNyeDRvmf3TaqsGDxFWm9V9VqlrnAWDIEKY5emvS9Gqi0ilnP1ZFPJA2KZh3_V53NZdZGDLY8qHnQPcMgJl31ZqMusI9_B-KdxyrggS7ERpR9EJnZp4Y89PCxk2_QOJ39U-u6tlRoQBF3dh8SVXU-3U4CSZPDSF3MSTI2azSwL-CxEdVGu0DHlQk5hsZMunSNqo1zSl-pODwGAmofevPWe6HhARt3V4qfn-1BeOzWdLNJzZtWYA89uLFasEVAfdVHc2h9bGr55h1hBkS5hcPJt_Vv_2f_lAjXaWBdGTY4xcFkk0fsKI8IJSmHToFalF2SkRKUcA="
+    STRING_SESSION = ""
     try:                                                                                                                                                                                                                                                             
         DRAGONS = set(int(x) for x in [])                                                                                                                                                                                                                            
         DEV_USERS = set(int(x) for x in [])                                                                                                                                                                                                                          
