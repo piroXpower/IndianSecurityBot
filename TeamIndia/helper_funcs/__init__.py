@@ -1,7 +1,7 @@
-from TeamIndia import DEV_USERS, DRAGONS, DEMONS, TIGERS, CODERS, WOLVES, telethn
+from TeamIndia import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
 
-IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS + CODERS
+IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS 
 
 IMMUNE_USERS = (
-    list(DRAGONS) + list(WOLVES) + list(DEMONS) + list(TIGERS) + list(DEV_USERS) + list(CODERS) 
+    list(DRAGONS) + list(WOLVES) + list(DEMONS) + list(TIGERS) + list(DEV_USERS)  
 )
