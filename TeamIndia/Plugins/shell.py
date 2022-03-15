@@ -1,7 +1,7 @@
 import subprocess
 
-from AliciaRobot import LOGGER, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
+from TeamIndia import LOGGER, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
