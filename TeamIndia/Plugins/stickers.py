@@ -24,9 +24,9 @@ from telegram.utils.helpers import mention_html
 
 
 
-from AliciaRobot import dispatcher
+from TeamIndia import dispatcher
 
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
 
 
 
