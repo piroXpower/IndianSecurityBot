@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from AliciaRobot import telethn
-from AliciaRobot.modules.helper_funcs.telethn.chatstatus import (
+from TeamIndia import telethn
+from TeamIndia.Plugins.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
