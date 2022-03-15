@@ -1,5 +1,5 @@
 from telethon import events, Button, custom
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 @register(pattern=("^/(game|games)"))
 async def games(event):
