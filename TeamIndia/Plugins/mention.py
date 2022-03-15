@@ -4,7 +4,7 @@ from telethon.tl.types import UserStatusOffline as off
 from telethon.tl.types import UserStatusOnline as onn
 from telethon.tl.types import UserStatusRecently as rec
 from telethon.utils import get_display_name
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 
 async def is_admin(event, user):
