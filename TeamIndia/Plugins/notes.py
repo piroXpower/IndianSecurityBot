@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import AliciaRobot.modules.sql.notes_sql as sql
-from AliciaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from AliciaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from AliciaRobot.modules.helper_funcs.msg_types import get_note_type
-from AliciaRobot.modules.helper_funcs.string_handling import (
+import TeamIndia.Plugins.sql.notes_sql as sql
+from TeamIndia import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.handlers import MessageHandlerChecker
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin, connection_status
+from TeamIndia.Plugins.helper_funcs.misc import build_keyboard, revert_buttons
+from TeamIndia.Plugins.helper_funcs.msg_types import get_note_type
+from TeamIndia.Plugins.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
