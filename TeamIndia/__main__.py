@@ -125,7 +125,7 @@ MOD_BUTTON = {}
 MOD_BUTTONS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("TeamIndia.modules." + module_name)
+    imported_module = importlib.import_module("TeamIndia.Plugins." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
