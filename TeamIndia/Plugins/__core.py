@@ -1,15 +1,15 @@
-from AliciaRobot import telethn as tbot
-from AliciaRobot.events import register
+from TeamIndia import telethn as tbot
+from TeamIndia.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from AliciaRobot import OWNER_ID
-from AliciaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from AliciaRobot import TEMP_DOWNLOAD_DIRECTORY
+from TeamIndia import OWNER_ID
+from TeamIndia import TEMP_DOWNLOAD_DIRECTORY as path
+from TeamIndia import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './AliciaRobot/resources/alicia.jpg'
+water = './Depedency/alicia.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./AliciaRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./TeamIndia/Plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -36,7 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-# from AliciaRobot.events import load_module
+# from TeamIndia.events import load_module
 # import asyncio
 # import os
 # from datetime import datetime
@@ -55,7 +55,7 @@ async def Prof(event):
 #             downloaded_file_name = (
 #                 await event.client.download_media(  # pylint:disable=E0602
 #                     await event.get_reply_message(),
-#                     "AliciaRobot/modules/",  # pylint:disable=E0602
+#                     "TeamIndia/Plugins/",  # pylint:disable=E0602
 #                 )
 #             )
 #             if "(" not in downloaded_file_name:
