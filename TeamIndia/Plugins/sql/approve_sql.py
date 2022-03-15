@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.sql import BASE, SESSION
 
 class Approvals(BASE):
     __tablename__ = "approval"
