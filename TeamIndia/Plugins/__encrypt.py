@@ -1,6 +1,6 @@
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 import os
-from AliciaRobot.events import register
+from TeamIndia.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
