@@ -1,7 +1,7 @@
 import threading
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
