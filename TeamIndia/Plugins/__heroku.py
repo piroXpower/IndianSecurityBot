@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from AliciaRobot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from AliciaRobot.events import register
+from TeamIndia import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from TeamIndia.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
@@ -157,7 +157,7 @@ async def dyno_usage(dyno):
     await asyncio.sleep(1.5)
 
     return await die.edit(
-        "**Dyno Usage**:\n\n"
+        "**Dyno Usage By This System**:\n\n"
         f" -> `Dyno usage for`  **{HEROKU_APP_NAME}**:\n"
         f"     •  `{AppHours}`**h**  `{AppMinutes}`**m**  "
         f"**|**  [`{AppPercentage}`**%**]"
@@ -186,12 +186,12 @@ async def _(dyno):
     v = await dyno.reply("Getting Logs....")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
-    await v.edit("Got the logs wait a sec")
+    await v.edit("Got the logs wait a sec!")
     await dyno.client.send_file(
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="alicia Bot Logz.",
+        caption="System Bot Logs.",
     )
 
     await asyncio.sleep(5)
