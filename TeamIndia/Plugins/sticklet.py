@@ -3,8 +3,8 @@ import textwrap
 import random
 
 from PIL import Image, ImageDraw, ImageFont
-from AliciaRobot import telethn as client
-from AliciaRobot.events import register
+from TeamIndia import telethn as client
+from TeamIndia.events import register
 
 
 @register(pattern="/slet (.*)")
