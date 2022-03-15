@@ -1,13 +1,13 @@
 from PIL import Image, ImageFont, ImageDraw
 import textwrap
 import os
-from AliciaRobot.events import register
-from AliciaRobot import (
+from TeamIndia.events import register
+from TeamIndia import (
     LOGGER,
     TEMP_DOWNLOAD_DIRECTORY
     )
 
-from AliciaRobot import telethn as bot
+from TeamIndia import telethn as bot
 
 
 @register(pattern="^/mmf ?(.*)")
