@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from AliciaRobot.modules.sql import SESSION, BASE
+from TeamIndia.Plugins.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
