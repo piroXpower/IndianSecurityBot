@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from AliciaRobot.modules.helper_funcs.misc import is_module_loaded
+from TeamIndia.Plugins.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
