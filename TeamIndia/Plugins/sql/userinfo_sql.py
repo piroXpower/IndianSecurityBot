@@ -1,7 +1,7 @@
 
 import threading
 
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.sql import BASE, SESSION
 from sqlalchemy import Column, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
