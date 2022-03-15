@@ -20,7 +20,7 @@ HEROKU_API_KEY = ""
 HEROKU_APP_NAME = ""                                                                                                                                                                                                                                                 
 WALL_API = ""                                                                                                                                                                                                                                                        
 CASH_API_KEY = ""                                                                                                                                                                                                                                                    
-DONATION_LINK = "paypal.me/mrakki58"                                                                                                                                                                                                                                 
+DONATION_LINK = "paypal.me/piroXpower"                                                                                                                                                                                                                                 
 WEBHOOK = False                                                                                                                                                                                                                                                      
 DEL_CMDS = False                                                        
 StartTime = time.time()
@@ -45,15 +45,15 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", "1613196478:AAHzs8A_73OkOBISpQ5emx5ToDxMlJu0XmU")
+    TOKEN = os.environ.get("TOKEN", "")
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", 1212368262))
+        OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", -1001204088829)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "H1M4N5HU0P")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
