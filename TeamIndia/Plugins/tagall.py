@@ -7,8 +7,8 @@
 # All rights reserved.
 
 
-from AliciaRobot import telethn as bot
-from AliciaRobot.events import register
+from TeamIndia import telethn as bot
+from TeamIndia.events import register
 
 
 @register(pattern="^/all$")
