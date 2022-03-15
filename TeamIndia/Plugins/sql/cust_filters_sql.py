@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from AliciaRobot.modules.helper_funcs.msg_types import Types
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.helper_funcs.msg_types import Types
+from TeamIndia.Plugins.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
