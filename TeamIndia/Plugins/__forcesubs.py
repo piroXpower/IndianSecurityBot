@@ -14,7 +14,7 @@ from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboard
 
 from TeamIndia import DRAGONS as SUDO_USERS
 from TeamIndia import pbot
-from TeamIndia.modules.sql_extended import forceSubscribe_sql as sql
+from TeamIndia.Plugins.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
