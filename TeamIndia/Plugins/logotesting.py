@@ -3,8 +3,8 @@ import requests
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
-from AliciaRobot.events import register
-from AliciaRobot import telethn as bot
+from TeamIndia.events import register
+from TeamIndia import telethn as bot
 
 @register(pattern="^/mlogo ?(.*)")
 async def makelogo(event):
