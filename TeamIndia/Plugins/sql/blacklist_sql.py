@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
 
-from AliciaRobot.modules.sql import SESSION, BASE
+from TeamIndia.Plugins.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
