@@ -146,7 +146,7 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    JOIN_LOGGER = #YOUR LOGHER                                                                                                                                                                                                                                     
+    JOIN_LOGGER = -1234567890                                                                                                                                                                                                                                     
     OWNER_USERNAME = "piroxpower"                                                                                                                                                                                                                                 
     LOAD = ""                                                                                                                                                                                                                                                        
     EVENT_LOGS = -1001774935713                                                                                                                                                                                                                                      
