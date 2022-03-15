@@ -1,8 +1,8 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from AliciaRobot import pbot
-from AliciaRobot.pyrogramee.errors import capture_err
+from TeamIndia import pbot
+from TeamIndia.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Github"
