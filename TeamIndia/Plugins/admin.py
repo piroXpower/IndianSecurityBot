@@ -563,17 +563,18 @@ def adminlist(update, context):
 __help__ = """
 Admins Play Major Roles To Manage A Group, We Have Created Some Hack Command In Our Bot So It Will Help To Manage Group Easily Via Bot.
 You Just Need To Give Commands To Bot And But Will Work for You. Click On Bellow Buttons & Get Detailed Information.
+
  ❍ /admins*:* list of admins in the chat
 """
 
-__button__ = [ InlineKeyboardButton(text="Group", callback_data="aliciaadmin_"),
-            InlineKeyboardButton(text="Promote", callback_data="aliciaadminpromote_"),
-            InlineKeyboardButton(text="Purge", callback_data="aliciaadminpurge_"),
+__button__ = [ InlineKeyboardButton(text="Group", callback_data="indiaadmin_"),
+            InlineKeyboardButton(text="Promote", callback_data="indiaadminpromote_"),
+            InlineKeyboardButton(text="Purge", callback_data="indiaadminpurge_"),
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Ban", callback_data="aliciaadminban_"), 
-              InlineKeyboardButton(text="Mute", callback_data="aliciaadminmute_"),
-              InlineKeyboardButton(text="Warn", callback_data="aliciaadminwarn_"),
+__buttons__ = [InlineKeyboardButton(text="Ban", callback_data="indiaadminban_"), 
+              InlineKeyboardButton(text="Mute", callback_data="indiaadminmute_"),
+              InlineKeyboardButton(text="Warn", callback_data="indiaadminwarn_"),
 ]
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
