@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from AliciaRobot import (
+from TeamIndia import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from AliciaRobot import (
     dispatcher,
     sw,
 )
-from AliciaRobot.__main__ import STATS, TOKEN, USER_INFO
-import AliciaRobot.modules.sql.userinfo_sql as sql
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from AliciaRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from AliciaRobot.modules.sql.users_sql import get_user_num_chats
-from AliciaRobot.modules.helper_funcs.chat_status import sudo_plus
-from AliciaRobot.modules.helper_funcs.extraction import extract_user
-from AliciaRobot import telethn as AliciaTelethonClient, TIGERS, DRAGONS, DEMONS
+from TeamIndia.__main__ import STATS, TOKEN, USER_INFO
+import TeamIndia.Plugins.sql.userinfo_sql as sql
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.sql.global_bans_sql import is_user_gbanned
+from TeamIndia.Plugins.sql.afk_sql import is_afk, check_afk_status
+from TeamIndia.Plugins.sql.users_sql import get_user_num_chats
+from TeamIndia.Plugins.helper_funcs.chat_status import sudo_plus
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user
+from TeamIndia import telethn as AliciaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
