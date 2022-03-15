@@ -1,7 +1,7 @@
-__mod_name__ = "Music"
+# __mod_name__ = "Music"
 
-__help__ = """
-**ADD @AliciaBotAssistant TO YOUR GROUP AND PLAY MUSIC**
+# __help__ = """
+**ADD Assistant TO YOUR GROUP AND PLAY MUSIC**
 
 /video <i>query</i>: download video from youtube
 /deezer <i>query</i>: download from deezer
