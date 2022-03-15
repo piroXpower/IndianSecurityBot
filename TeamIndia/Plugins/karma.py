@@ -1,10 +1,10 @@
-from AliciaRobot import pbot as app
-from AliciaRobot.utils.errors import capture_err
-from AliciaRobot.pyrogramee.pluginshelper import member_permissions
-from AliciaRobot.utils.dbfunc import (update_karma, get_karma, get_karmas,
+from TeamIndia import pbot as app
+from TeamIndia.utils.errors import capture_err
+from TeamIndia.pyrogramee.pluginshelper import member_permissions
+from TeamIndia.utils.dbfunc import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int, is_karma_on,
                                    karma_on, karma_off)
-from AliciaRobot.utils.filter_groups import karma_positive_group, karma_negative_group
+from TeamIndia.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 
