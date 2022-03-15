@@ -1,7 +1,7 @@
 
-from AliciaRobot import telethn as client
-from AliciaRobot.events import register
-from AliciaRobot import LOGGER
+from TeamIndia import telethn as client
+from TeamIndia.events import register
+from TeamIndia import LOGGER
 
 
 if 1 == 1:
