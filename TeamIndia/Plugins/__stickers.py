@@ -4,19 +4,15 @@ from TeamIndia.functions.stickers import *
 
 __mod_name__ = "Stickers"
 
-__help__ = """We promise to keep you latest up-date with the latest technology on telegram. 
-we updradge alicia everyday to simplifie use of telegram and give a better exprince to users.
+__help__ = "Click on below buttons and get information about stickers commands."
 
-Click on below buttons and get information about stickers commands.
-
-"""
-__button__ = [ InlineKeyboardButton(text="Sticker", callback_data="aliciasticker_"),
-            InlineKeyboardButton(text="Transform", callback_data="aliciastickertransform_"),
-            InlineKeyboardButton(text="DocPic", callback_data="aliciastickerdpic_"),
+__button__ = [ InlineKeyboardButton(text="Sticker", callback_data="indiasticker_"),
+            InlineKeyboardButton(text="Transform", callback_data="indiastickertransform_"),
+            InlineKeyboardButton(text="DocPic", callback_data="indiastickerdpic_"),
             
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Make Stickers", callback_data="aliciastickermemify_"), 
+__buttons__ = [InlineKeyboardButton(text="Make Stickers", callback_data="indiastickermemify_"), 
              
  
 ]
