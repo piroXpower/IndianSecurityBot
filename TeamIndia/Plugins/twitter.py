@@ -1,7 +1,7 @@
 import twitter_scraper
 from requests import get
 
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 
 @register(pattern="^/twt ?(.*)")
