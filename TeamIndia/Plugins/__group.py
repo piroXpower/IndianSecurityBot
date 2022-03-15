@@ -1,4 +1,4 @@
-from AliciaRobot.functions.group import *
+from TeamIndia.functions.group import *
 
 
 
@@ -10,14 +10,14 @@ we updradge alicia everyday to simplifie use of telegram and give a better expri
 Click on below buttons and check amazing group for group.
 
 """
-__button__ = [ InlineKeyboardButton(text="Backup", callback_data="aliciagroup_"),
-            InlineKeyboardButton(text="Blacklist", callback_data="aliciagroupbl_"),
-            InlineKeyboardButton(text="F-Sub", callback_data="aliciagroupfsub_"),
+__button__ = [ InlineKeyboardButton(text="Backup", callback_data="indiagroup_"),
+            InlineKeyboardButton(text="Blacklist", callback_data="indiagroupbl_"),
+            InlineKeyboardButton(text="F-Sub", callback_data="indiagroupfsub_"),
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Control", callback_data="aliciagroupcontrol_"), 
-              InlineKeyboardButton(text="Disable", callback_data="aliciagroupdisable_"),
-              InlineKeyboardButton(text="Nightmode", callback_data="aliciagroupnmode_"),
+__buttons__ = [InlineKeyboardButton(text="Control", callback_data="indiagroupcontrol_"), 
+              InlineKeyboardButton(text="Disable", callback_data="indiagroupdisable_"),
+              InlineKeyboardButton(text="Nightmode", callback_data="indiagroupnmode_"),
 ]
 
 
