@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
 
 
  
