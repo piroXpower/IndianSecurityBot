@@ -2,11 +2,9 @@ from TeamIndia.functions.fun import *
 
 
 
-__help__ = """We promise to keep you latest up-date with the latest technology on telegram. 
-we updradge alicia everyday to simplifie use of telegram and give a better exprince to Users.
+__help__ = "Click on below buttons and check amazing tools for Fun."  
 
-Click on below buttons and check amazing tools for Fun.
-"""  # no help string
+# no help string
 
 __button__ = [ InlineKeyboardButton(text="Memes", callback_data="indiafun_"),
             InlineKeyboardButton(text="Emojis", callback_data="indiafunemoji_"),
