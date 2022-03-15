@@ -84,9 +84,11 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", 2857558)
     API_HASH = os.environ.get("API_HASH", "1038be815e038592fa2b483c13dd6c4b")
-    BOT_ID = int(os.environ.get("BOT_ID", 1613196478))
-    DB_URI = os.environ.get("DATABASE_URL", "postgresql://vhyrades:gOlW9HnB8gjo80BKZMKLdQucme9Si2nB@fanny.db.elephantsql.com/vhyrades")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://TeamIndiaOP:TeamIndiaOP@cluster0.pfhfb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    BOT_ID = os.environ.get("BOT_ID", "1613196478")
+    BOT_NAME = os.environ.get("BOT_NAME", "TGManagerBot")
+    BOT_USERNAME = int(os.environ.get("BOT_USERNAME", ""))
+    DB_URI = os.environ.get("DATABASE_URL", "")
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -104,11 +106,11 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "MafiaBot_Support")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
-    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "sJsaTYZnYqTR7z~pq8OAdVj2UIktizitY5k6ivnErXkArICQv_ZbNmG6HMDlE7Lg")
-    STRING_SESSION = os.environ.get("STRING_SESSION", "1AZWarzsBu4JME17PtDItxFthl0IJ0WBrnkP8EyL7Wk-G9xw8ysL40HvXZguTOLXc6IRXhbehHL7rSzPRc-AhT4Q5bbLj7VAYKda_d-TBcdckJZENCOD4daN8xGDX41m_sTRwXBBvYJg7M3OJywow_nN89TfbEu1Ui3jAS46Heom1QLdw9n5Aewm9zxjQrWF_99fZIlYId-Akoz7FxA88TKOC_NJDwt_ST-u6xAQJNhXcUxfuewoEOtyGuoMezi5v5bIMTBiGNKkojlxHCHS2qnNCQYlBLiklIS_xGVPbdDw95JPAYfgwNRgPMUaBvXyu3Qd_4iGIIoL-riBZJ923fCO9m-bZRFI=")
-    REDIS_URL = os.environ.get("REDIS_URL", "redis://:pf5a846bd88f2da1b37e94c9a66af70d4413d6a9af501d251661fc66d2bac54f8@ec2-34-227-200-242.compute-1.amazonaws.com:24559")
+    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+    REDIS_URL = os.environ.get("REDIS_URL", "")
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "NAQKZO-UMQSBG-IUTXPK-WZRJDB-ARQ")
 
@@ -137,15 +139,15 @@ if ENV:
 else:
     from TeamIndia.config import Development as Config
 
-    TOKEN = "1240287427:AAFjfRgnevmFW4tiWrflqEM_s5967jr7J0A"
+    TOKEN = ""
 
     try:
-        OWNER_ID = 936481432
+        OWNER_ID = #YOUR OWNER_ID
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    JOIN_LOGGER = -1001774935713                                                                                                                                                                                                                                     
-    OWNER_USERNAME = "GodFatherAkki"                                                                                                                                                                                                                                 
+    JOIN_LOGGER = #YOUR LOGHER                                                                                                                                                                                                                                     
+    OWNER_USERNAME = "piroxpower"                                                                                                                                                                                                                                 
     LOAD = ""                                                                                                                                                                                                                                                        
     EVENT_LOGS = -1001774935713                                                                                                                                                                                                                                      
     URL = "https://TeamIndia.herokuapp.com/"                                                                                                                                                                                                                       
@@ -153,21 +155,21 @@ else:
     API_ID = 2857558                                                                                                                                                                                                                                                 
     API_HASH = "1038be815e038592fa2b483c13dd6c4b"                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                                      
-    DB_URI = "postgres://wyzrizov:qAkAbV5qVCxtXy5vye45WUCBcV0foSlZ@kashin.db.elephantsql.com/wyzrizov"                                                                                                                                                               
-    MONGO_DB_URI = "mongodb+srv://ZAID:ZAID@cluster0.c4wtt.mongodb.net/ZAID?retryWrites=true&w=majority"                                                                                                                                                             
+    DB_URI = ""                                                                                                                                                               
+    MONGO_DB_URI = ""                                                                                                                                                             
     TEMP_DOWNLOAD_DIRECTORY = "./"                                                                                                                                                                                                                                   
     BOT_ID = 1240287427                                                                                                                                                                                                                                              
     NO_LOAD = "rss"                                                                                                                                                                                                                                                  
     STRICT_GBAN = True                                                                                                                                                                                                                                               
     ALLOW_EXCL = True                                                                                                                                                                                                                                                
-    TOKEN = "1240287427:AAFjfRgnevmFW4tiWrflqEM_s5967jr7J0A"                                                                                                                                                                                                         
-    SUPPORT_CHAT = "AniebotSupports"                                                                                                                                                                                                                                 
+    TOKEN = ""                                                                                                                                                                                                         
+    SUPPORT_CHAT = "IndianSupportGroup"                                                                                                                                                                                                                                 
     ARQ_API_KEY = "DOAGPB-DQBYDD-PVINUY-DSUAHO-ARQ"                                                                                                                                                                                                                  
     ARQ_API_URL = "https://thearq.tech"                                                                                                                                                                                                                              
     CERT_PATH = ""                                                                                                                                                                                                                                                   
     WORKERS = 8                                                                                                                                                                                                                                                      
     SPAMWATCH_API = "sJsaTYZnYqTR7z~pq8OAdVj2UIktizitY5k6ivnErXkArICQv_ZbNmG6HMDlE7Lg"                                                                                                                                                                               
-    REDIS_URL = "redis://:pf5a846bd88f2da1b37e94c9a66af70d4413d6a9af501d251661fc66d2bac54f8@ec2-34-227-200-242.compute-1.amazonaws.com:24559"                                                                                                               
+    REDIS_URL = ""                                                                                                               
     STRING_SESSION = "1AZWarzoBuyHII-icttyUtvtubNyeDRvmf3TaqsGDxFWm9V9VqlrnAWDIEKY5emvS9Gqi0ilnP1ZFPJA2KZh3_V53NZdZGDLY8qHnQPcMgJl31ZqMusI9_B-KdxyrggS7ERpR9EJnZp4Y89PCxk2_QOJ39U-u6tlRoQBF3dh8SVXU-3U4CSZPDSF3MSTI2azSwL-CxEdVGu0DHlQk5hsZMunSNqo1zSl-pODwGAmofevPWe6HhARt3V4qfn-1BeOzWdLNJzZtWYA89uLFasEVAfdVHc2h9bGr55h1hBkS5hcPJt_Vv_2f_lAjXaWBdGTY4xcFkk0fsKI8IJSmHToFalF2SkRKUcA="
     try:                                                                                                                                                                                                                                                             
         DRAGONS = set(int(x) for x in [])                                                                                                                                                                                                                            
@@ -192,13 +194,13 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1240287427)
-DEV_USERS.add(1240287427)
-DEV_USERS.add(1240287427)
-DEV_USERS.add(1240287427)
-DEV_USERS.add(5273543926)
-DRAGONS.add(1240287427)
-DRAGONS.add(5273543926)
+DEV_USERS.add()
+DEV_USERS.add(5125042013)
+DEV_USERS.add(5125042013)
+DEV_USERS.add(5125042013)
+DEV_USERS.add(5125042013)
+DRAGONS.add(5125042013)
+DRAGONS.add(5125042013)
 
 if not SPAMWATCH_API:
     sw = None
