@@ -5,8 +5,8 @@ from telethon.utils import get_input_location
 import flag
 import html, os
 from countryinfo import CountryInfo
-from AliciaRobot import telethn as borg
-from AliciaRobot.events import register
+from TeamIndia import telethn as borg
+from TeamIndia.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By Alicia.</b>
+Gathered By @IndianSupportGroup.</b>
 """
     
     
