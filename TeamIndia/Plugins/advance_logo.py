@@ -3,10 +3,10 @@ import requests
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
-from TeamIndia.alicia import AliciaBot
+from TeamIndia.india import TeamIndia
 from TeamIndia import telethn as bot
 
-@AliciaBot(pattern="^/logo ?(.*)")
+@TeamIndia(pattern="^/logo ?(.*)")
 async def makelogo(event):
         quew = event.pattern_match.group(1).strip()
             
