@@ -70,11 +70,7 @@ if ENV:
         WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
-    try:
-        CODERS = set(int(x) for x in os.environ.get("CODERS", "5125042013").split())
-    except ValueError:
-        raise Exception("Your developer coders users list does not contain valid integers.")
-
+    
     try:
         TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
     except ValueError:
@@ -176,7 +172,7 @@ else:
     try:                                                                                                                                                                                                                                                             
         DRAGONS = set(int(x) for x in [])                                                                                                                                                                                                                            
         DEV_USERS = set(int(x) for x in [])   
-        CODERS = set(int(x) for x in [])
+        
         
     except ValueError:                                                                                                                                                                                                                                               
         raise Exception("Your sudo or dev users list does not contain valid integers.")                                                                                                                                                                              
@@ -205,7 +201,7 @@ DEV_USERS.add(5125042013)
 DEV_USERS.add(5125042013)
 DRAGONS.add(5125042013)
 DRAGONS.add(5125042013)
-DEV_USERS.add(CODERS)
+
 
 
 if not SPAMWATCH_API:
