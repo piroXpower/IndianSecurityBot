@@ -1,4 +1,4 @@
-from AliciaRobot.functions.fun import *
+from TeamIndia.functions.fun import *
 
 
 
@@ -8,13 +8,13 @@ we updradge alicia everyday to simplifie use of telegram and give a better expri
 Click on below buttons and check amazing tools for Fun.
 """  # no help string
 
-__button__ = [ InlineKeyboardButton(text="Memes", callback_data="aliciafun_"),
-            InlineKeyboardButton(text="Emojis", callback_data="aliciafunemoji_"),
-            InlineKeyboardButton(text="Games", callback_data="aliciafungames_"),
+__button__ = [ InlineKeyboardButton(text="Memes", callback_data="indiafun_"),
+            InlineKeyboardButton(text="Emojis", callback_data="indiafunemoji_"),
+            InlineKeyboardButton(text="Games", callback_data="indiafungames_"),
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Couple", callback_data="aliciafuncouple_"), 
-              InlineKeyboardButton(text="Karma", callback_data="aliciafunkarma_"),
+__buttons__ = [InlineKeyboardButton(text="Couple", callback_data="indiafuncouple_"), 
+              InlineKeyboardButton(text="Karma", callback_data="indiafunkarma_"),
 ]
 
 
