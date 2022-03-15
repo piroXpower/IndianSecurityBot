@@ -1,6 +1,6 @@
 import pyaztro
 
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 ASTRO = ""
 
