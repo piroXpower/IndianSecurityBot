@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from AliciaRobot import LOGGER, dispatcher
-from AliciaRobot.modules.disable import DisableAbleMessageHandler
-from AliciaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from TeamIndia import LOGGER, dispatcher
+from TeamIndia.Plugins.disable import DisableAbleMessageHandler
+from TeamIndia.Plugins.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
