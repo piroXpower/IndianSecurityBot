@@ -3,10 +3,10 @@ import os
 from PIL import Image
 from PIL import ImageOps
 
-from AliciaRobot import telethn as bot
-from AliciaRobot import TEMP_DOWNLOAD_DIRECTORY
-from AliciaRobot.events import register
-from AliciaRobot.pyrogramee.telethonbasics import check_media
+from TeamIndia import telethn as bot
+from TeamIndia import TEMP_DOWNLOAD_DIRECTORY
+from TeamIndia.events import register
+from TeamIndia.pyrogramee.telethonbasics import check_media
 
 Converted = TEMP_DOWNLOAD_DIRECTORY + "sticker.webp"
 
