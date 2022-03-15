@@ -25,21 +25,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from AliciaRobot import BOT_ID
-from AliciaRobot.conf import get_int_key, get_str_key
+from TeamIndia import BOT_ID
+from TeamIndia.Handler.conf import get_int_key, get_str_key
 
-# from AliciaRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from AliciaRobot.pyrogramee.telethonbasics import is_admin
-from AliciaRobot.events import register
-from AliciaRobot import MONGO_DB_URI 
+# from TeamIndia.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from TeamIndia.pyrogramee.telethonbasics import is_admin
+from TeamIndia.events import register
+from TeamIndia import MONGO_DB_URI 
 from pymongo import MongoClient
-from AliciaRobot.modules.sql_extended.nsfw_watch_sql import (
+from TeamIndia.Plugins.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -430,7 +430,7 @@ async def del_profanity(event):
 
 __help__ = """
 <b> Group Guardian: </b>
-✪ Alicia can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ TeamIndia can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
