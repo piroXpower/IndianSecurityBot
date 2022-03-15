@@ -1,8 +1,8 @@
 import os
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 from geopy.geocoders import Nominatim
-from AliciaRobot.events import register
-from AliciaRobot import *
+from TeamIndia.events import register
+from TeamIndia import *
 from telethon import *
 from telethon.tl import *
 
