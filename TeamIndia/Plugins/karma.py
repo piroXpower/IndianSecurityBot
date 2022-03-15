@@ -1,7 +1,7 @@
 from TeamIndia import pbot as app
 from TeamIndia.utils.errors import capture_err
 from TeamIndia.pyrogramee.pluginshelper import member_permissions
-from TeamIndia.utils.dbfunc import (update_karma, get_karma, get_karmas,
+from TeamIndia.Database.dbfunc import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int, is_karma_on,
                                    karma_on, karma_off)
 from TeamIndia.utils.filter_groups import karma_positive_group, karma_negative_group
