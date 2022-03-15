@@ -1,4 +1,4 @@
-from AliciaRobot import telethn as tbot
+from TeamIndia import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from AliciaRobot import *
-from AliciaRobot.events import register
+from TeamIndia import *
+from TeamIndia.events import register
 
 
 async def is_register_admin(chat, user):
