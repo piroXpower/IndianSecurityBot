@@ -2,20 +2,18 @@ from TeamIndia.functions.users import *
 
 
 
-__help__ = """We promise to keep you latest up-date with the latest technology on telegram. 
-we updradge alicia everyday to simplifie use of telegram and give a better exprince to users.
+__help__ = "Click on below buttons and check amazing tools for users."
 
-Click on below buttons and check amazing tools for users.
-"""  # no help string
+  # no help string
 
-__button__ = [ InlineKeyboardButton(text="Horoscope", callback_data="aliciauser_"),
-            InlineKeyboardButton(text="AFK", callback_data="aliciauserafk_"),
-            InlineKeyboardButton(text="About", callback_data="aliciauserabout_"),
+__button__ = [ InlineKeyboardButton(text="Horoscope", callback_data="indiauser_"),
+            InlineKeyboardButton(text="AFK", callback_data="indiauserafk_"),
+            InlineKeyboardButton(text="About", callback_data="indiauserabout_"),
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Info", callback_data="aliciauserinfo_"), 
-              InlineKeyboardButton(text="History", callback_data="aliciauserhistory_"),
-              InlineKeyboardButton(text="Extra", callback_data="aliciauserextra_"),
+__buttons__ = [InlineKeyboardButton(text="Info", callback_data="indiauserinfo_"), 
+              InlineKeyboardButton(text="History", callback_data="indiauserhistory_"),
+              InlineKeyboardButton(text="Extra", callback_data="indiauserextra_"),
 ]
 
 
