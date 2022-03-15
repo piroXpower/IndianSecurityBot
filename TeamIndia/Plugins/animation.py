@@ -4,9 +4,9 @@ from typing import List
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
 
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1

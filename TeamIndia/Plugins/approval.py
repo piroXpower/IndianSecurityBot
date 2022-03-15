@@ -1,11 +1,11 @@
 import html
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot import dispatcher, DRAGONS
-from AliciaRobot.modules.helper_funcs.extraction import extract_user
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia import dispatcher, DRAGONS
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import AliciaRobot.modules.sql.approve_sql as sql
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
-from AliciaRobot.modules.log_channel import loggable
+import TeamIndia.Plugins.sql.approve_sql as sql
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
+from TeamIndia.Plugins.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

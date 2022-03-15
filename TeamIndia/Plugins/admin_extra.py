@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import ChatPermissions
 
-from AliciaRobot import BOT_ID,OWNER_ID, DRAGONS, DEV_USERS, pbot as app
+from TeamIndia import BOT_ID,OWNER_ID, DRAGONS, DEV_USERS, pbot as app
 SUDOERS = [OWNER_ID] + DEV_USERS + DRAGONS 
 
 

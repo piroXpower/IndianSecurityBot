@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from AliciaRobot import TIGERS, WOLVES, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import (
+from TeamIndia import TIGERS, WOLVES, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.sql import antiflood_sql as sql
+from TeamIndia.Plugins.log_channel import loggable
+from TeamIndia.Plugins.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from AliciaRobot.modules.helper_funcs.string_handling import extract_time
-from AliciaRobot.modules.connection import connected
-from AliciaRobot.modules.helper_funcs.alternate import send_message
-from AliciaRobot.modules.sql.approve_sql import is_approved
+from TeamIndia.Plugins.helper_funcs.string_handling import extract_time
+from TeamIndia.Plugins.connection import connected
+from TeamIndia.Plugins.helper_funcs.alternate import send_message
+from TeamIndia.Plugins.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 

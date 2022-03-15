@@ -3,8 +3,8 @@ import requests
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
-from AliciaRobot.alicia import AliciaBot
-from AliciaRobot import telethn as bot
+from TeamIndia.alicia import AliciaBot
+from TeamIndia import telethn as bot
 
 @AliciaBot(pattern="^/logo ?(.*)")
 async def makelogo(event):
@@ -175,11 +175,11 @@ async def makelogo(event):
                   
                   fontSize = int(imgSize[1] / 5)
                   image_widthz, image_heightz = img.size    
-                  font = ImageFont.truetype(f"./AliciaRobot/resources/fonts/{randFont}", fontSize)
+                  font = ImageFont.truetype(f"./TeamIndia/resources/fonts/{randFont}", fontSize)
                   textSize = font.getsize(upper_text)
                   while textSize[0] > imgSize[0] - 100:
                      fontSize -= 1
-                     font = ImageFont.truetype(f"./AliciaRobot/resources/fonts/{randFont}", fontSize)
+                     font = ImageFont.truetype(f"./TeamIndia/resources/fonts/{randFont}", fontSize)
                      textSize = font.getsize(upper_text)
                   w, h = draw.textsize(upper_text, font=font)
                   h += int(h*0.5)
@@ -194,11 +194,11 @@ async def makelogo(event):
         
                   fontSize = int(imgSize[1] / 14)
                   image_widthz, image_heightz = img.size
-                  font = ImageFont.truetype(f"./AliciaRobot/resources/fonts/{randFont}", fontSize)
+                  font = ImageFont.truetype(f"./TeamIndia/resources/fonts/{randFont}", fontSize)
                   textSize = font.getsize(lower_text)
                   while textSize[0] > imgSize[0] - 100:
                      fontSize -= 1
-                     font = ImageFont.truetype(f"./AliciaRobot/resources/fonts/{randFont}", fontSize)
+                     font = ImageFont.truetype(f"./TeamIndia/resources/fonts/{randFont}", fontSize)
                      textSize = font.getsize(lower_text)
                   w, h = draw.textsize(lower_text, font=font)
                   h += int(h*0.5)

@@ -8,9 +8,9 @@ import random
 from telethon import *
 from telethon.tl.types import *
 
-from AliciaRobot import *
-from AliciaRobot.events import register
-from AliciaRobot import ubot
+from TeamIndia import *
+from TeamIndia.events import register
+from TeamIndia import ubot
 
 
 EMOJI_PATTERN = re.compile(

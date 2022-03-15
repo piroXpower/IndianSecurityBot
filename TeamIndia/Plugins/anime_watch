@@ -1,7 +1,7 @@
 from gogoanimeapi import gogoanime as anime
 from telethon import types, Button, events
-from AliciaRobot import telethn as GogoAnime
-from AliciaRobot.events import register
+from TeamIndia import telethn as GogoAnime
+from TeamIndia.events import register
 
 @GogoAnime.on(events.NewMessage(pattern="^/gogo ?(.*)"))
 async def gogo(event):

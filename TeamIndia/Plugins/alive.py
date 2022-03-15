@@ -9,9 +9,9 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, Button, custom, version
-from AliciaRobot.events import register
-from AliciaRobot import telethn as aasf
-from AliciaRobot import StartTime, dispatcher
+from TeamIndia.events import register
+from TeamIndia import telethn as aasf
+from TeamIndia import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 5

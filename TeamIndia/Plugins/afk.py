@@ -1,12 +1,12 @@
 import random, html
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.disable import (
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from AliciaRobot.modules.sql import afk_sql as sql
-from AliciaRobot.modules.users import get_user_id
+from TeamIndia.Plugins.sql import afk_sql as sql
+from TeamIndia.Plugins.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
