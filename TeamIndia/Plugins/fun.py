@@ -5,8 +5,8 @@ import time
 import TeamIndia.Plugins.fun_strings as fun_strings
 from TeamIndia import dispatcher
 from TeamIndia.Plugins.disable import DisableAbleCommandHandler
-from TeamIndia.helper_funcs.chat_status import is_user_admin
-from TeamIndia.helper_funcs.extraction import extract_user
+from TeamIndia.Plugins.helper_funcs.chat_status import is_user_admin
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
