@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from AliciaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
+from TeamIndia import SUPPORT_CHAT, WALL_API, dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
