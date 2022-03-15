@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import AliciaRobot.modules.fun_strings as fun_strings
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import is_user_admin
-from AliciaRobot.modules.helper_funcs.extraction import extract_user
+import TeamIndia.Plugins.fun_strings as fun_strings
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import is_user_admin
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
