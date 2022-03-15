@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from AliciaRobot.modules.sql import SESSION, BASE
+from TeamIndia.Plugins.sql import SESSION, BASE
 
 
 class Permissions(BASE):
