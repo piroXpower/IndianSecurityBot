@@ -1,5 +1,5 @@
-from AliciaRobot import ubot
-from AliciaRobot.events import register
+from TeamIndia import ubot
+from TeamIndia.events import register
 import asyncio, os
 import datetime
 

@@ -5,8 +5,8 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from AliciaRobot import telethn, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
+from TeamIndia import telethn, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 

@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from AliciaRobot import dispatcher, LOGGER, DRAGONS
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
-from AliciaRobot.modules.helper_funcs.extraction import extract_text
-from AliciaRobot.modules.helper_funcs.filters import CustomFilters
-from AliciaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from AliciaRobot.modules.helper_funcs.msg_types import get_filter_type
-from AliciaRobot.modules.helper_funcs.string_handling import (
+from TeamIndia import dispatcher, LOGGER, DRAGONS
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.handlers import MessageHandlerChecker
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
+from TeamIndia.Plugins.helper_funcs.extraction import extract_text
+from TeamIndia.Plugins.helper_funcs.filters import CustomFilters
+from TeamIndia.Plugins.helper_funcs.misc import build_keyboard_parser
+from TeamIndia.Plugins.helper_funcs.msg_types import get_filter_type
+from TeamIndia.Plugins.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from AliciaRobot.modules.sql import cust_filters_sql as sql
+from TeamIndia.Plugins.sql import cust_filters_sql as sql
 
-from AliciaRobot.modules.connection import connected
+from TeamIndia.Plugins.connection import connected
 
-from AliciaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from TeamIndia.Plugins.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

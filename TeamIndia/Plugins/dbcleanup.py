@@ -1,9 +1,9 @@
 from time import sleep
 
-import AliciaRobot.modules.sql.global_bans_sql as gban_sql
-import AliciaRobot.modules.sql.users_sql as user_sql
-from AliciaRobot import DEV_USERS, OWNER_ID, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
+import TeamIndia.Plugins.sql.global_bans_sql as gban_sql
+import TeamIndia.Plugins.sql.users_sql as user_sql
+from TeamIndia import DEV_USERS, OWNER_ID, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

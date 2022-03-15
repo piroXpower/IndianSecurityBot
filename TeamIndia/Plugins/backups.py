@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import AliciaRobot.modules.sql.notes_sql as sql
-from AliciaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from AliciaRobot.__main__ import DATA_IMPORT
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
-from AliciaRobot.modules.helper_funcs.alternate import typing_action
+import TeamIndia.Plugins.sql.notes_sql as sql
+from TeamIndia import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from TeamIndia.__main__ import DATA_IMPORT
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
+from TeamIndia.Plugins.helper_funcs.alternate import typing_action
 
-# from AliciaRobot.modules.rules import get_rules
-import AliciaRobot.modules.sql.rules_sql as rulessql
+# from TeamIndia.Plugins.rules import get_rules
+import TeamIndia.Plugins.sql.rules_sql as rulessql
 
-# from AliciaRobot.modules.sql import warns_sql as warnssql
-import AliciaRobot.modules.sql.blacklist_sql as blacklistsql
-from AliciaRobot.modules.sql import disable_sql as disabledsql
+# from TeamIndia.Plugins.sql import warns_sql as warnssql
+import TeamIndia.Plugins.sql.blacklist_sql as blacklistsql
+from TeamIndia.Plugins.sql import disable_sql as disabledsql
 
-# from AliciaRobot.modules.sql import cust_filters_sql as filtersql
-# import AliciaRobot.modules.sql.welcome_sql as welcsql
-import AliciaRobot.modules.sql.locks_sql as locksql
-from AliciaRobot.modules.connection import connected
+# from TeamIndia.Plugins.sql import cust_filters_sql as filtersql
+# import TeamIndia.Plugins.sql.welcome_sql as welcsql
+import TeamIndia.Plugins.sql.locks_sql as locksql
+from TeamIndia.Plugins.connection import connected
 
 
  
@@ -325,7 +325,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("AliciaRobot{}.backup".format(chat_id), "w") as f:
+    with open("TeamIndia{}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -341,15 +341,15 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("AliciaRobot{}.backup".format(chat_id), "rb"),
-        caption="💾*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `AliciaRobot-Backup` was specially made for notes 📚.".format(
+        document=open("TeamIndia{}.backup".format(chat_id), "rb"),
+        caption="💾*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `TeamIndia-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
         timeout=360,
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("AliciaRobot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("TeamIndia{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data

@@ -1,6 +1,6 @@
-from AliciaRobot import pbot as app
+from TeamIndia import pbot as app
 from pyrogram import filters
-from AliciaRobot.utils.errors import capture_err
+from TeamIndia.utils.errors import capture_err
 import os
 import random
 from carbonnow import Carbon

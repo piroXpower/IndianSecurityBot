@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import AliciaRobot.modules.sql.blacklistusers_sql as sql
-from AliciaRobot import (
+import TeamIndia.Plugins.sql.blacklistusers_sql as sql
+from TeamIndia import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from AliciaRobot import (
     WOLVES,
     dispatcher,
 )
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
-from AliciaRobot.modules.helper_funcs.extraction import (
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
+from TeamIndia.Plugins.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AliciaRobot.modules.log_channel import gloggable
+from TeamIndia.Plugins.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

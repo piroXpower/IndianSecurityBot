@@ -1,15 +1,15 @@
 
 import html
 
-from AliciaRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import (
+from TeamIndia import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from AliciaRobot.modules.sql import cleaner_sql as sql
+from TeamIndia.Plugins.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,

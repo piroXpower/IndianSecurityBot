@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import AliciaRobot.modules.sql.blacklist_sql as sql
-from AliciaRobot import dispatcher, LOGGER
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AliciaRobot.modules.helper_funcs.extraction import extract_text
-from AliciaRobot.modules.helper_funcs.misc import split_message
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.warns import warn
-from AliciaRobot.modules.helper_funcs.string_handling import extract_time
-from AliciaRobot.modules.connection import connected
-from AliciaRobot.modules.sql.approve_sql import is_approved
-from AliciaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import TeamIndia.Plugins.sql.blacklist_sql as sql
+from TeamIndia import dispatcher, LOGGER
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin, user_not_admin
+from TeamIndia.Plugins.helper_funcs.extraction import extract_text
+from TeamIndia.Plugins.helper_funcs.misc import split_message
+from TeamIndia.Plugins.log_channel import loggable
+from TeamIndia.Plugins.warns import warn
+from TeamIndia.Plugins.helper_funcs.string_handling import extract_time
+from TeamIndia.Plugins.connection import connected
+from TeamIndia.Plugins.sql.approve_sql import is_approved
+from TeamIndia.Plugins.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

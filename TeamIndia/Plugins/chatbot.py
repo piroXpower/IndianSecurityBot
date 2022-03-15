@@ -4,12 +4,12 @@ import re
 import os
 import html
 import requests
-import AliciaRobot.modules.sql.chatbot_sql as sql
+import TeamIndia.Plugins.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
-from AliciaRobot import dispatcher, updater, SUPPORT_CHAT
-from AliciaRobot.modules.log_channel import gloggable
+from TeamIndia import dispatcher, updater, SUPPORT_CHAT
+from TeamIndia.Plugins.log_channel import gloggable
 from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
                       InlineKeyboardMarkup, Message, ParseMode, Update, Bot, User)
 
@@ -19,8 +19,8 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 
-from AliciaRobot.modules.helper_funcs.filters import CustomFilters
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from TeamIndia.Plugins.helper_funcs.filters import CustomFilters
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin, user_admin_no_reply
 
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
@@ -119,7 +119,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        aliciaurl = requests.get('https://kukiapi.xyz/api/apikey=ALICIAROBOT/alicia/h1m4n5hu0p/message='+Message)
+        aliciaurl = requests.get('https://kukiapi.xyz/api/apikey=TeamIndia/alicia/h1m4n5hu0p/message='+Message)
         Alicia = json.loads(aliciaurl.text)
         alicia = Alicia['reply']
         sleep(0.3)

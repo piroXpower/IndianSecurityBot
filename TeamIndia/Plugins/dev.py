@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import AliciaRobot
+import TeamIndia
 
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {AliciaRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {TeamIndia.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        AliciaRobot.ALLOW_CHATS = True
+        TeamIndia.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        AliciaRobot.ALLOW_CHATS = False
+        TeamIndia.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return

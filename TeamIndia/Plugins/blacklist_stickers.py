@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import AliciaRobot.modules.sql.blsticker_sql as sql
-from AliciaRobot import LOGGER, dispatcher
-from AliciaRobot.modules.connection import connected
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.alternate import send_message
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AliciaRobot.modules.helper_funcs.misc import split_message
-from AliciaRobot.modules.helper_funcs.string_handling import extract_time
+import TeamIndia.Plugins.sql.blsticker_sql as sql
+from TeamIndia import LOGGER, dispatcher
+from TeamIndia.Plugins.connection import connected
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.alternate import send_message
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin, user_not_admin
+from TeamIndia.Plugins.helper_funcs.misc import split_message
+from TeamIndia.Plugins.helper_funcs.string_handling import extract_time
 
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.warns import warn
+from TeamIndia.Plugins.log_channel import loggable
+from TeamIndia.Plugins.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

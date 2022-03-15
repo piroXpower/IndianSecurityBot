@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from AliciaRobot import (
+from TeamIndia import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from AliciaRobot import (
     WOLVES,
     dispatcher,
 )
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import (
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from AliciaRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from AliciaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from AliciaRobot.modules.helper_funcs.string_handling import extract_time
-from AliciaRobot.modules.log_channel import gloggable, loggable
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user_and_text
+from TeamIndia.Plugins.helper_funcs.string_handling import extract_time
+from TeamIndia.Plugins.log_channel import gloggable, loggable
 
 
  
