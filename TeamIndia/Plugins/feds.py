@@ -1,19 +1,19 @@
 """
 Fully Written by RoseLoverX
 """
-from AliciaRobot import telethn as tbot
-from AliciaRobot import OWNER_ID, BOT_ID
+from TeamIndia import telethn as tbot
+from TeamIndia import OWNER_ID, BOT_ID
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
 from io import BytesIO
-from AliciaRobot.modules.sql.feds_sql import *
+from TeamIndia.modules.sql.feds_sql import *
 from telethon import *
 from telethon import Button
 from telethon.tl import *
 from telethon.tl.types import User
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 async def is_admin(event, user):
     try:
