@@ -1,12 +1,12 @@
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import (
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from AliciaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from AliciaRobot.modules.helper_funcs.filters import CustomFilters
+from TeamIndia.Plugins.helper_funcs.extraction import extract_user_and_text
+from TeamIndia.Plugins.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
