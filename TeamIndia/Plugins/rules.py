@@ -1,9 +1,9 @@
 from typing import Optional
 
-import AliciaRobot.modules.sql.rules_sql as sql
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import user_admin
-from AliciaRobot.modules.helper_funcs.string_handling import markdown_parser
+import TeamIndia.Plugins.sql.rules_sql as sql
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import user_admin
+from TeamIndia.Plugins.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
