@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/AliciaRobot
-RUN git clone -b shiken https://github.com/H1M4N5HU0P/AliciaRobot /root/AliciaRobot
-WORKDIR /root/AliciaRobot
+# Copy Python Requirements to /root/TeamIndia
+RUN git clone -b shiken https://github.com/TG-TeamIndia/TeamIndia /root/TeamIndia
+WORKDIR /root/TeamIndia
 
-#Copy config file to /root/AliciaRobot/AliciaRobot
-COPY ./AliciaRobot/sample_config.py ./AliciaRobot/config.py* /root/AliciaRobot/AliciaRobot/
+#Copy config file to /root/TeamIndia/TeamIndia
+COPY ./TeamIndia/sample_config.py ./TeamIndia/config.py* /root/TeamIndia/TeamIndia/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","AliciaRobot"]
+CMD ["python3","-m","TeamIndia"]
