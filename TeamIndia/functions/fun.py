@@ -8,15 +8,15 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from AliciaRobot.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for fun module
 
 
-def alicia_fun_callback(update, context):
+def india_fun_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciafun_":
+    if query.data == "indiafun_":
         query.message.edit_text(
             text=""" Here is the help for the *Memes* module:
 
@@ -47,9 +47,9 @@ def alicia_fun_callback(update, context):
         )
 
 
-def alicia_fun_emoji_callback(update, context):
+def india_fun_emoji_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciafunemoji_":
+    if query.data == "indiafunemoji_":
         query.message.edit_text(
             text=""" Here is the help for the *Emojis* module:
 
@@ -74,9 +74,9 @@ def alicia_fun_emoji_callback(update, context):
         )
 
 
-def alicia_fun_games_callback(update, context):
+def india_fun_games_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciafungames_":
+    if query.data == "indiafungames_":
         query.message.edit_text(
             text=""" Here is the help for the *Games* module:
 
@@ -102,9 +102,9 @@ def alicia_fun_games_callback(update, context):
 
 
 
-def alicia_fun_couple_callback(update, context):
+def india_fun_couple_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciafuncouple_":
+    if query.data == "indiafuncouple_":
         query.message.edit_text(
             text=""" Here is the help for the *Couples* module:
 
@@ -122,9 +122,9 @@ def alicia_fun_couple_callback(update, context):
         )
 
 
-def alicia_fun_karma_callback(update, context):
+def india_fun_karma_callback(update, context):
     query = update.callback_query
-    if query.data == "aliciafunkarma_":
+    if query.data == "indiafunkarma_":
         query.message.edit_text(
             text=""" Here is the help for the *Karma* module:
  
@@ -157,11 +157,11 @@ def alicia_fun_karma_callback(update, context):
 
 # Handlers start from here 
 
-fun_callback_handler = CallbackQueryHandler(alicia_fun_callback, pattern=r"aliciafun_", run_async=True)
-fun_emoji_callback_handler = CallbackQueryHandler(alicia_fun_emoji_callback, pattern=r"aliciafunemoji_", run_async=True)
-fun_games_callback_handler = CallbackQueryHandler(alicia_fun_games_callback, pattern=r"aliciafungames_", run_async=True)
-fun_couple_callback_handler = CallbackQueryHandler(alicia_fun_couple_callback, pattern=r"aliciafuncouple_", run_async=True)
-fun_karma_callback_handler = CallbackQueryHandler(alicia_fun_karma_callback, pattern=r"aliciafunkarma_", run_async=True)
+fun_callback_handler = CallbackQueryHandler(india_fun_callback, pattern=r"indiafun_", run_async=True)
+fun_emoji_callback_handler = CallbackQueryHandler(india_fun_emoji_callback, pattern=r"indiafunemoji_", run_async=True)
+fun_games_callback_handler = CallbackQueryHandler(india_fun_games_callback, pattern=r"indiafungames_", run_async=True)
+fun_couple_callback_handler = CallbackQueryHandler(india_fun_couple_callback, pattern=r"indiafuncouple_", run_async=True)
+fun_karma_callback_handler = CallbackQueryHandler(india_fun_karma_callback, pattern=r"indiafunkarma_", run_async=True)
 
 
 
