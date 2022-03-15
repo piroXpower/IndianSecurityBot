@@ -86,7 +86,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", "1038be815e038592fa2b483c13dd6c4b")
     BOT_ID = os.environ.get("BOT_ID", "1613196478")
     BOT_NAME = os.environ.get("BOT_NAME", "TGManagerBot")
-    BOT_USERNAME = int(os.environ.get("BOT_USERNAME", ""))
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
     DB_URI = os.environ.get("DATABASE_URL", "")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "")
     DONATION_LINK = os.environ.get("DONATION_LINK")
