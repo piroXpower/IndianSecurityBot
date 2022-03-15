@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import AliciaRobot.modules.sql.users_sql as sql
-from AliciaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from AliciaRobot.modules.sql.users_sql import get_all_users
+import TeamIndia.Plugins.sql.users_sql as sql
+from TeamIndia import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus, sudo_plus
+from TeamIndia.Plugins.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
