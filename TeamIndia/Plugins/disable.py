@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from AliciaRobot import dispatcher
-from AliciaRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from AliciaRobot.modules.helper_funcs.misc import is_module_loaded
+from TeamIndia import dispatcher
+from TeamIndia.Plugins.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from TeamIndia.Plugins.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
