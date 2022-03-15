@@ -175,7 +175,9 @@ else:
     STRING_SESSION = ""
     try:                                                                                                                                                                                                                                                             
         DRAGONS = set(int(x) for x in [])                                                                                                                                                                                                                            
-        DEV_USERS = set(int(x) for x in [])                                                                                                                                                                                                                          
+        DEV_USERS = set(int(x) for x in [])   
+        CODERS = set(int(x) for x in [])
+        
     except ValueError:                                                                                                                                                                                                                                               
         raise Exception("Your sudo or dev users list does not contain valid integers.")                                                                                                                                                                              
                                                                                                                                                                                                                                                                      
