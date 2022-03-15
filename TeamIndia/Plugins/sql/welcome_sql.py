@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from AliciaRobot.modules.helper_funcs.msg_types import Types
-from AliciaRobot.modules.sql import BASE, SESSION
+from TeamIndia.Plugins.helper_funcs.msg_types import Types
+from TeamIndia.Plugins.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
