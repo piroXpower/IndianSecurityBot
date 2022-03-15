@@ -1,4 +1,4 @@
-from AliciaRobot.functions.stickers import *
+from TeamIndia.functions.stickers import *
 
 
 
