@@ -11,10 +11,10 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from AliciaRobot import BOT_ID, arq
-from AliciaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from AliciaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from AliciaRobot import pbot as AliciaRobot
+from TeamIndia import BOT_ID, arq
+from TeamIndia.helper_extra.aichat import add_chat, get_session, remove_chat
+from TeamIndia.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from TeamIndia import pbot as AliciaRobot
 
 translator = google_translator()
 
@@ -348,7 +348,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-Alicia AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+THIS BOT AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
