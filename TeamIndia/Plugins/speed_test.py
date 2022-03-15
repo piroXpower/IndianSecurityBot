@@ -1,7 +1,7 @@
 import speedtest
-from AliciaRobot import DEV_USERS, dispatcher
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import dev_plus
+from TeamIndia import DEV_USERS, dispatcher
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
