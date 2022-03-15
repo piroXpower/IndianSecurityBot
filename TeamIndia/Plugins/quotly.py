@@ -4,8 +4,8 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AliciaRobot import pbot as app, arq
-from AliciaRobot.utils.errors import capture_err
+from TeamIndia import pbot as app, arq
+from TeamIndia.utils.errors import capture_err
 
 
 
