@@ -5,7 +5,7 @@ from telethon import types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from AliciaRobot.events import register
+from TeamIndia.events import register
 
 
 @register(pattern="/dpic(?: |$)(.*)")
