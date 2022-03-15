@@ -4,12 +4,8 @@ from TeamIndia.functions.group import *
 
 __mod_name__ = "Group"
 
-__help__ = """We promise to keep you latest up-date with the latest technology on telegram. 
-we updradge alicia everyday to simplifie use of telegram and give a better exprince to users.
+__help__ = "Click on below buttons and check amazing group for group."
 
-Click on below buttons and check amazing group for group.
-
-"""
 __button__ = [ InlineKeyboardButton(text="Backup", callback_data="indiagroup_"),
             InlineKeyboardButton(text="Blacklist", callback_data="indiagroupbl_"),
             InlineKeyboardButton(text="F-Sub", callback_data="indiagroupfsub_"),
