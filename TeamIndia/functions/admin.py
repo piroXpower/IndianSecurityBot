@@ -8,7 +8,7 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
-from functions.__main__ import *
+from TeamIndia.__main__ import *
 
 
 # Buttons Function for admin module
