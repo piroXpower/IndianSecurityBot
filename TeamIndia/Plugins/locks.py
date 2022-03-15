@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import AliciaRobot.modules.sql.locks_sql as sql
-from AliciaRobot import dispatcher, DRAGONS, LOGGER
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
-from AliciaRobot.modules.helper_funcs.chat_status import (
+import TeamIndia.Plugins.sql.locks_sql as sql
+from TeamIndia import dispatcher, DRAGONS, LOGGER
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
+from TeamIndia.Plugins.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.connection import connected
-from AliciaRobot.modules.sql.approve_sql import is_approved
-from AliciaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from TeamIndia.Plugins.log_channel import loggable
+from TeamIndia.Plugins.connection import connected
+from TeamIndia.Plugins.sql.approve_sql import is_approved
+from TeamIndia.Plugins.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
