@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from AliciaRobot import StartTime, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import sudo_plus
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
+from TeamIndia import StartTime, dispatcher
+from TeamIndia.Plugins.helper_funcs.chat_status import sudo_plus
+from TeamIndia.Plugins.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
