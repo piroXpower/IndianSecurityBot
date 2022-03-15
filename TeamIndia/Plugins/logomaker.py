@@ -1,10 +1,10 @@
 import os 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
-from AliciaRobot.alicia import AliciaBot
-from AliciaRobot import telethn as bot
+from TeamIndia.india import TeamIndia
+from TeamIndia import telethn as bot
 
-@AliciaBot(pattern="^/blogo ?(.*)")
+@TeamIndia(pattern="^/blogo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if not quew:
@@ -31,11 +31,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByAlicia.png"
     img.save(fname2, "png")
-    await bot.send_file(event.chat_id, fname2, caption="Made By @AliciaGroup_bot")
+    await bot.send_file(event.chat_id, fname2, caption="Made By @IndianSecurityBot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @MafiaBot_Support, {e}')
+   await event.reply(f'Error Report @IndianSupportGroup, {e}')
 
 
 
