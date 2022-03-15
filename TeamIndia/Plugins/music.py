@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from AliciaRobot.conf import get_str_key
-from AliciaRobot.pyrogramee.pluginshelper import get_text, progress
-from AliciaRobot import pbot
+from TeamIndia.conf import get_str_key
+from TeamIndia.pyrogramee.pluginshelper import get_text, progress
+from TeamIndia import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
