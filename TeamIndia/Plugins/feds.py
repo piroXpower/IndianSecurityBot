@@ -6,7 +6,7 @@ from TeamIndia import OWNER_ID, BOT_ID
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
 from io import BytesIO
-from TeamIndia.modules.sql.feds_sql import *
+from TeamIndia.Plugins.sql.feds_sql import *
 from telethon import *
 from telethon import Button
 from telethon.tl import *
