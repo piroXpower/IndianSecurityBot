@@ -1,4 +1,4 @@
-from TeamIndia.helper_funcs.telethn import IMMUNE_USERS, telethn
+from TeamIndia.helper_funcs import IMMUNE_USERS, telethn
 from TeamIndia import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
