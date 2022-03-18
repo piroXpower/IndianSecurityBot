@@ -13,7 +13,7 @@ from pyrogram.filters import create
 from pyrogram.types import CallbackQuery, Message
 from TeamIndia import BOT_ID
 from TeamIndia.mongo.disabledb import DISABLED_CMDS
-from TeamIndia.mongo.core.caching import ADMIN_CACHE, admin_cache_reload
+from TeamIndia.mongo.utils.caching import ADMIN_CACHE, admin_cache_reload
 
 DEV_USERS = ""
 OWNER_ID = DEV_USERS
