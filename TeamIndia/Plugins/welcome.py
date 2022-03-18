@@ -18,12 +18,12 @@ from TeamIndia.mongo.utils.string import (
     build_keyboard,
     parse_button,
 )
-from Rose.mongo.decorators.permissions import adminsOnly
+from TeamIndia.mongo.decorators.permissions import adminsOnly
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup,Message)
 from pyrogram.types import (Chat, ChatPermissions, InlineKeyboardButton,
                             InlineKeyboardMarkup, Message, User)
-from Rose.mongo.captcha import captchas    
+from TeamIndia.mongo.captcha import captchas    
 from .captcha import send_captcha     
 
              
