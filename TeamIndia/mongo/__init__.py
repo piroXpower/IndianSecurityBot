@@ -7,7 +7,7 @@
 from sys import exit as exiter
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
-from motor.motor_asyncio import AsyncIOMotorClient as RoseMongoClient
+from motor.motor_asyncio import AsyncIOMotorClient as BotMongoClient
 from TeamIndia import MONGO_DB_URI
 
 MONGO_PORT = "27017"
