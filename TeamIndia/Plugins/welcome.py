@@ -24,7 +24,7 @@ from pyrogram.types import (InlineKeyboardButton,
 from pyrogram.types import (Chat, ChatPermissions, InlineKeyboardButton,
                             InlineKeyboardMarkup, Message, User)
 from TeamIndia.mongo.captcha import captchas    
-from .captcha import send_captcha     
+#from .captcha import send_captcha     
 
              
 # Initialize
