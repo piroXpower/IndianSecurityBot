@@ -2,7 +2,7 @@ from functools import wraps
 from traceback import format_exc as err
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
-from Rose import SUDO_USERS as SUDOERS, pbot as app
+from TeamIndia import SUDO_USERS as SUDOERS, pbot as app
 
 
 async def member_permissions(chat_id: int, user_id: int):
