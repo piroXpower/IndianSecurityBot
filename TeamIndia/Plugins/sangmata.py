@@ -1,7 +1,7 @@
 from asyncio.exceptions import TimeoutError
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from TeamIndia import ubot
+from TeamIndia import telethn as ubot
 from TeamIndia.events import register
 
 
