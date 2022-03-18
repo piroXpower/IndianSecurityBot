@@ -117,14 +117,12 @@ if ENV:
 
     if STRING_SESSION:
         ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-    else:
-        sys.exit(1)
-
+            
     try:
-        ubot.start()
+        
     except BaseException:
-        print("Network Error/INVALID TOKEN !")
-        sys.exit(1)
+        print("String Session Not Given Or Duplicated Please Change/Add String Session With Var Name STRING_SESSION!")
+        
         
 
 
