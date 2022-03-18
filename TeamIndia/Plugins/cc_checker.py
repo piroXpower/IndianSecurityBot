@@ -1,4 +1,4 @@
-from TeamIndia import ubot
+from TeamIndia import telethn as ubot
 from TeamIndia.events import register
 import asyncio, os
 import datetime
