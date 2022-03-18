@@ -10,7 +10,7 @@ from telethon.tl.types import *
 
 from TeamIndia import *
 from TeamIndia.events import register
-from TeamIndia import ubot
+from TeamIndia import telethn as ubot
 
 
 EMOJI_PATTERN = re.compile(
