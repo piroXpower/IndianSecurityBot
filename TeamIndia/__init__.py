@@ -118,14 +118,11 @@ if ENV:
     if STRING_SESSION:
         ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
             
-    try:
-        
-    except BaseException:
+    try:        
+    except ValueError:
         print("String Session Not Given Or Duplicated Please Change/Add String Session With Var Name STRING_SESSION!")
         
         
-
-
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
     except ValueError:
